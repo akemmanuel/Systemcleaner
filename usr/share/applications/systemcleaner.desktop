@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Systemcleaner
+Comment=Der Akemsoft-Systemcleaner
+Type=Application
+Icon=accessories-system-cleaner
+Exec=systemcleaner
+Terminal=false
+Categories=Network;GTK;GNOME
+Keywords=Systemcleaner;dateien;löschen;sauber machen
