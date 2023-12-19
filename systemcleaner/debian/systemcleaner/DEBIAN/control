@@ -1,0 +1,9 @@
+Package: systemcleaner
+Version: 1.0.1
+Architecture: all
+Maintainer: Emmanuel from Akemsoft <gutensusi@gmail.com>
+Installed-Size: 71
+Depends: python3, python3-gi, python3-pip
+Section: gnome
+Priority: optional
+Description: Der Akemsoft-Systemcleaner

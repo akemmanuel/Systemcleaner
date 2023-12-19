@@ -1,0 +1,26 @@
+Format: 1.8
+Date: Mon, 13 Nov 2023 17:29:40 -0300
+Source: systemcleaner-build-deps
+Binary: systemcleaner-build-deps
+Built-For-Profiles: noudeb
+Architecture: all
+Version: 1.0.4
+Distribution: unstable
+Urgency: low
+Maintainer: Equivs Dummy Package Generator <root@emmanuel>
+Changed-By: Equivs Dummy Package Generator <root@emmanuel>
+Description:
+ systemcleaner-build-deps - build-dependencies for systemcleaner
+Changes:
+ systemcleaner-build-deps (1.0.4) unstable; urgency=low
+ .
+   * First version
+Checksums-Sha1:
+ 6c5c010310630d172b9adf91668e7c456b84198e 2092 systemcleaner-build-deps_1.0.4_all.deb
+ 0d77377e9a52ca828dd0106d2a549ea683d46757 15807 systemcleaner-build-deps_1.0.4_amd64.buildinfo
+Checksums-Sha256:
+ 0f57550b34eb0ff4a2e9e6a656b36fbcec12cdf506dab184cd9b8b08bddd95b7 2092 systemcleaner-build-deps_1.0.4_all.deb
+ c57d4085df0b7e0f80a7a85c0eb28d2e050c4f0ebc9fcbf92933475812f0ca5e 15807 systemcleaner-build-deps_1.0.4_amd64.buildinfo
+Files:
+ 61decaf1368a0165839fbf56dbfc0ab6 2092 devel optional systemcleaner-build-deps_1.0.4_all.deb
+ fb17aafa59dd8786bd23f5d9d0d40d1e 15807 devel optional systemcleaner-build-deps_1.0.4_amd64.buildinfo

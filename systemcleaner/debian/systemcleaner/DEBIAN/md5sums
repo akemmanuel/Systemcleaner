@@ -1,0 +1,6 @@
+e4bb68653abe2336638d4e919eac2338  usr/bin/systemcleaner
+89fefd7a7cb1fe8ed244b20218af1484  usr/lib/systemcleaner/systemcleaner.py
+78fe92254942e4e9c592eb4d93418a26  usr/share/applications/systemcleaner.desktop
+943a66ab1049ddaccd747649b98791c3  usr/share/doc/systemcleaner/changelog.gz
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/systemcleaner/copyright
+89252ae03b19cb3d703b08cb5bcbe3f3  usr/share/systemcleaner/systemcleaner.glade
