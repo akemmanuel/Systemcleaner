@@ -1,5 +1,5 @@
 Format: 1.8
-Date: Sat, 30 Sep 2023 14:57:58 -0400
+Date: Fri, 22 Dec 2023 14:43:11 -0300
 Source: systemcleaner-build-deps
 Binary: systemcleaner-build-deps
 Built-For-Profiles: noudeb
@@ -16,11 +16,11 @@ Changes:
  .
    * First version
 Checksums-Sha1:
- 58d515030608e435620e38573102604988781e95 2088 systemcleaner-build-deps_1.0.0_all.deb
- d6ca5aad342c5002ba3e2075b1fa7b1b1fb0f20f 15774 systemcleaner-build-deps_1.0.0_amd64.buildinfo
+ db5daaa3819175b3f04283ee7af0fdcb9a1919d6 2084 systemcleaner-build-deps_1.0.0_all.deb
+ 191395fe870877531f869f4b6d02c153ecfd3d99 15815 systemcleaner-build-deps_1.0.0_amd64.buildinfo
 Checksums-Sha256:
- 5fb23bd51cd925a75a6b3d318976c099dee0d658c3282c8a366be7935f96e648 2088 systemcleaner-build-deps_1.0.0_all.deb
- a0e35ca54c4b416641a91bd1fc6092eb4d490cd587bb5cb33423c4e3629621b5 15774 systemcleaner-build-deps_1.0.0_amd64.buildinfo
+ 741c0dc78696d3b81d26bb7c6f79a5e1a9d06b46a207a22b05438be24d26bcdb 2084 systemcleaner-build-deps_1.0.0_all.deb
+ be2befcf65afa1b2e04e1eea7a9ef5ea7119cba00e2531d909b40b4cd728a365 15815 systemcleaner-build-deps_1.0.0_amd64.buildinfo
 Files:
- 9766dd15bf3e6c7febcd1309f8e9d82f 2088 devel optional systemcleaner-build-deps_1.0.0_all.deb
- 97f095e70eb728d63a72a95a5d82cced 15774 devel optional systemcleaner-build-deps_1.0.0_amd64.buildinfo
+ 41dd165180b9515a4b5a8b4c0424b071 2084 devel optional systemcleaner-build-deps_1.0.0_all.deb
+ 5b118d565ad0ff09212b17e64c2d7d64 15815 devel optional systemcleaner-build-deps_1.0.0_amd64.buildinfo

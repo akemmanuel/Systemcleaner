@@ -1,17 +1,20 @@
 Format: 1.0
-Source: systemcleaner-build-deps
-Binary: systemcleaner-build-deps
-Architecture: all
-Version: 1.0.1
+Source: systemcleaner
+Binary: systemcleaner
+Architecture: all source
+Version: 1.0.0
 Checksums-Md5:
- 1ffcf78ebcf0af461b1a92623f6ed6e9 2092 systemcleaner-build-deps_1.0.1_all.deb
+ ecaac9ec64614c967932c7cb45c202e3 551 systemcleaner_1.0.0.dsc
+ 370d233426ab2ba17bb696018ef33bca 7016 systemcleaner_1.0.0_all.deb
 Checksums-Sha1:
- eb678c2534523f1b9ff3ee2f2e1e593750fa7985 2092 systemcleaner-build-deps_1.0.1_all.deb
+ c95a0ae9fe0c8340bf578d4fad893f6fd2b151ee 551 systemcleaner_1.0.0.dsc
+ 33d90bd0cd2643fa52b280416df3ea40a8f9c02f 7016 systemcleaner_1.0.0_all.deb
 Checksums-Sha256:
- 712ee12775452882f3fa7d572646f96745b0d2ccf633e4614bac9ad887c06ec4 2092 systemcleaner-build-deps_1.0.1_all.deb
+ 4c64bf3d2034886aab9c551ae88e13d6fc96f35c6d968187d6a3e3bc4a2c0e53 551 systemcleaner_1.0.0.dsc
+ 88183d19ef9164888e03896552862caeafebc3f34e648c1247a44636e5153fe6 7016 systemcleaner_1.0.0_all.deb
 Build-Origin: Ubuntu
 Build-Architecture: amd64
-Build-Date: Mon, 18 Dec 2023 18:03:40 -0300
+Build-Date: Fri, 22 Dec 2023 14:43:27 -0300
 Build-Tainted-By:
  merged-usr-via-aliased-dirs
  usr-local-has-configs
@@ -303,7 +306,7 @@ Installed-Build-Depends:
  libsoup2.4-1 (= 2.74.2-3),
  libsoup2.4-common (= 2.74.2-3),
  libsqlite3-0 (= 3.37.2-2ubuntu0.1),
- libssh-4 (= 0.9.6-2ubuntu0.22.04.1),
+ libssh-4 (= 0.9.6-2ubuntu0.22.04.2),
  libssl3 (= 3.0.2-0ubuntu1.12),
  libstdc++-11-dev (= 11.4.0-1ubuntu1~22.04),
  libstdc++6 (= 12.3.0-1ubuntu1~22.04),
@@ -460,4 +463,4 @@ Environment:
  LC_NUMERIC="es_PY.UTF-8"
  LC_PAPER="es_PY.UTF-8"
  LC_TELEPHONE="es_PY.UTF-8"
- SOURCE_DATE_EPOCH="1702933418"
+ SOURCE_DATE_EPOCH="1703188619"

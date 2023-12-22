@@ -1,5 +1,5 @@
-systemcleaner (1.0.1) UNRELEASED; urgency=medium
+systemcleaner (1.0.0) jammy; urgency=medium
 
-  * Initial release. 
+  * Initial release.
 
- -- Emmanuel <emmanuel@akemsoft.com>  Mon, 18 Dec 2023 18:02:46 -0300
+ -- Emmanuel <tobias@emmanuel>  Thu, 21 Dec 2023 16:56:59 -0300

@@ -124,7 +124,7 @@ class Systemcleaner():
 
 
     class TreeViewGtkWi():
-        def __init__(self, tree_view: Gtk.TreeView, list_store: Gtk.ListStore, selection_mode: Gtk.SelectionMode, column, what = ["File", "Size"]):
+        def __init__(self, tree_view: Gtk.TreeView, list_store: Gtk.ListStore, selection_mode: Gtk.SelectionMode, column, what = [["File", True],  ["Size", True]]):
             tree_view.set_model(list_store)
 
             self.column_check_box = Gtk.TreeViewColumn("Löschen")
@@ -139,9 +139,14 @@ class Systemcleaner():
 
             a = 1
             for i in what:
-                self.column_file = Gtk.TreeViewColumn(i, renderer, text=a)
+                self.column_file = Gtk.TreeViewColumn(i[0], renderer, text=a)
+                if i[1]:
+                    self.column_file.set_sort_column_id(a)
+
                 tree_view.append_column(self.column_file)
+
                 a += 1
+
 
             tree_view.get_selection().set_mode(selection_mode)
             tree_view.set_search_column(column)
@@ -182,7 +187,7 @@ class Systemcleaner():
         for program in programms:
             store.append([False, program])
 
-        self.TreeViewGtkWi(treeview, store, Gtk.SelectionMode.NONE, 1, what=["Name"])
+        self.TreeViewGtkWi(treeview, store, Gtk.SelectionMode.NONE, 1, what=[["Name", True]])
         self.builder.get_object("uninstall").connect("clicked", self.uninstall, store, programms)
     
     def uninstall(self, widget, programs, real):
@@ -217,7 +222,7 @@ class Systemcleaner():
             for file in end:
                 store.append([False, file["datei_pfad"], str(round(file["datei_größe"] / 1000000000, 1))])
 
-            self.TreeViewGtkWi(treeview, store, Gtk.SelectionMode.NONE, 1, what=["File"])
+            self.TreeViewGtkWi(treeview, store, Gtk.SelectionMode.NONE, 1, what=[["File", True]])
             self.builder.get_object("delete_empty_files").connect("clicked", self.delete_files_from_store, store)
 
     def großedaten(self):
@@ -243,8 +248,8 @@ class Systemcleaner():
                 if file["datei_größe"] / 1000000000 >= 0.5:
                     self.store2.append([False, file["datei_pfad"], str(round(file["datei_größe"] / 1000000000, 1))])
 
-            self.TreeViewGtkWi(treeview, store, Gtk.SelectionMode.SINGLE, 0, what=["File", "Size"])
-            self.TreeViewGtkWi(treeview2, self.store2, Gtk.SelectionMode.SINGLE, 0, what=["File", "Size"])
+            self.TreeViewGtkWi(treeview, store, Gtk.SelectionMode.SINGLE, 0, what=[["File", True], ["Size", True]])
+            self.TreeViewGtkWi(treeview2, self.store2, Gtk.SelectionMode.SINGLE, 0, what=[["File", True], ["Size", True]])
 
             self.builder.get_object("delete_big_files").connect("clicked", self.delete_files_from_store, store)
 

@@ -502,7 +502,6 @@
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
                                 <property name="search-column">1</property>
-                                <property name="hover-selection">True</property>
                                 <child internal-child="selection">
                                   <object class="GtkTreeSelection"/>
                                 </child>
@@ -537,8 +536,8 @@
                     </child>
                   </object>
                   <packing>
-                    <property name="name">Big files</property>
-                    <property name="title" translatable="yes">Big files</property>
+                    <property name="name">files</property>
+                    <property name="title" translatable="yes">Files</property>
                     <property name="position">2</property>
                   </packing>
                 </child>
@@ -579,7 +578,6 @@
                               <object class="GtkTreeView" id="empty_tree">
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
-                                <property name="hover-selection">True</property>
                                 <child internal-child="selection">
                                   <object class="GtkTreeSelection"/>
                                 </child>
@@ -655,7 +653,6 @@
                               <object class="GtkTreeView" id="uninstall_programms">
                                 <property name="visible">True</property>
                                 <property name="can-focus">True</property>
-                                <property name="hover-selection">True</property>
                                 <child internal-child="selection">
                                   <object class="GtkTreeSelection"/>
                                 </child>
