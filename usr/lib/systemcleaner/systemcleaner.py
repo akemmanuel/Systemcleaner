@@ -89,7 +89,6 @@ class Systemcleaner():
         self.smart_trash = self.builder.get_object("trash")
         self.smart_cache = self.builder.get_object("cache")
         self.smart_shutdown = self.builder.get_object("shutdown")
-        self.smart_logs = self.builder.get_object("logs")
         self.smart_requ = self.builder.get_object("notrequiredfiles")
         self.smart_appcache = self.builder.get_object("appcache")
 
@@ -314,9 +313,6 @@ class Systemcleaner():
         if self.smart_shutdown.get_active():
             command += "rm /var/lib/systemd/coredump/core.*.zst\njournalctl --rotate\njournalctl --vacuum-time=2s\n"
             do = True
-        if self.smart_logs.get_active():
-            command += f"rm -rf /var/log/*\n"
-            do = True
         if self.smart_appcache.get_active():
             command += f"rm -rf {os.path.expanduser('~/.cache/*')}\n"
             do = True
@@ -347,7 +343,6 @@ class Systemcleaner():
         self.smart_trash.set_active(False)
         self.smart_cache.set_active(False)
         self.smart_shutdown.set_active(False)
-        self.smart_logs.set_active(False)
         self.smart_requ.set_active(False)
 
         self.smart_stack.set_visible_child_name("finish")

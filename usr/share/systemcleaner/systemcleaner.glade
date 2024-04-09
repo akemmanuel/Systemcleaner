@@ -332,20 +332,6 @@
                                   </packing>
                                 </child>
                                 <child>
-                                  <object class="GtkCheckButton" id="logs">
-                                    <property name="label" translatable="yes">Logs löschen</property>
-                                    <property name="visible">True</property>
-                                    <property name="can-focus">True</property>
-                                    <property name="receives-default">False</property>
-                                    <property name="draw-indicator">True</property>
-                                  </object>
-                                  <packing>
-                                    <property name="expand">False</property>
-                                    <property name="fill">True</property>
-                                    <property name="position">3</property>
-                                  </packing>
-                                </child>
-                                <child>
                                   <object class="GtkCheckButton" id="notrequiredfiles">
                                     <property name="label" translatable="yes">Nicht benötigte Dateien</property>
                                     <property name="visible">True</property>
