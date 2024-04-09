@@ -114,10 +114,6 @@ class Systemcleaner():
         thread.start()
         thread.join()
 
-        thread2 = Thread(target=self.getprogramms)
-        thread2.start()
-        thread2.join()
-
         thread3 = Thread(target=self.leeredaten)
         thread3.start()
 
@@ -169,36 +165,6 @@ class Systemcleaner():
         nodisplay.write(f"{file}\n")
         nodisplay.close()
         box.destroy()
-
-    
-    def getprogramms(self):
-        programms_o = sub.getoutput("apt list --installed")
-        programms_a = programms_o.split("\n")
-        programms = []
-        for line in programms_a:
-            programms.append(line.split("/")[0])
-
-        programms = programms[4:]
-
-        store = Gtk.ListStore(bool, str)
-        treeview = self.builder.get_object("uninstall_programms")
-
-        for program in programms:
-            store.append([False, program])
-
-        self.TreeViewGtkWi(treeview, store, Gtk.SelectionMode.NONE, 1, what=[["Name", True]])
-        self.builder.get_object("uninstall").connect("clicked", self.uninstall, store, programms)
-    
-    def uninstall(self, widget, programs, real):
-        items_to_remove = []
-        a = 0
-        for row in programs:
-            if row[0]:
-                items_to_remove.append([row[1], row.iter, a])
-            a += 1
-        for item in items_to_remove:
-            text = sub.getoutput(f"pkexec apt-get remove -y {item[2]}")
-            print(text)
                     
     def leeredaten(self):
         if not os.path.isfile(os.path.expanduser("~/.systemcleaner-nodisplay")):
